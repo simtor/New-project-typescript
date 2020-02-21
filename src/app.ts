@@ -8,8 +8,15 @@
 
 const button = document.querySelector('button')!;
 
-button.addEventListener('Click', () => {
-    console.log('I was clicked');
-});
+function clickhandler(message: string){
+    console.log('Icarly' +message);
+}
+
+if(button){
+    button.addEventListener('Click', clickhandler.bind(null, "You're welcome"));
+    //{
+        //console.log('I was clicked');
+    //});
+}
 
 
