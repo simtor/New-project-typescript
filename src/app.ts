@@ -6,7 +6,7 @@
 
 // import sum from './analytics'
 
-const button = document.querySelector('button');
+const button = document.querySelector('button')!;
 
 button.addEventListener('Click', () => {
     console.log('I was clicked');
